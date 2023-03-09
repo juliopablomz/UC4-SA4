@@ -1,6 +1,11 @@
 package senai.uc4.sa4;
 
 import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.PreparedStatement;
+import java.sql.SQLException;
+import java.sql.ResultSetMetaData;
+
 
 public class ConexaoMySQL {
     private static String DRIVER = "com.mysql.cj.jdbc.Driver";
@@ -9,22 +14,36 @@ public class ConexaoMySQL {
     private static String PASS = "root";
 
     public static Connection iniciarConexao() {
-        Connection conexao = null;
+
         try {
             Class.forName(DRIVER);
-            conexao = java.sql.DriverManager.getConnection(URL, USER, PASS);
-        } catch (Exception e) {
-            e.printStackTrace();
+            return  DriverManager.getConnection(URL, USER, PASS);
+        } catch (ClassNotFoundException | SQLException e) {
+            throw new RuntimeException("Erro na Conexão"+ e);
+
         }
-        return conexao;
+
     }
-    public static void fecharConexao(Connection conexao) {
-        if (conexao!= null)
+    public static void fecharConexao(Connection connection, PreparedStatement stmt) {
+       fecharConexao(connection,stmt);
         try {
-            conexao.close();
-        } catch (Exception e) {
+            stmt.close();
+
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+
+    }
+
+    public static void fecharConexao(Connection connection, PreparedStatement stmt, ResultSetMetaData rs) {
+        try {
+            stmt.close();
+        } catch (SQLException e) {
             e.printStackTrace();
         }
     }
+
+
+
 
 }
