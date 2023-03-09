@@ -4,17 +4,23 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="cff16fa2-bbfd-44a9-8ac7-6221f308d7de" name="Changes" comment="Initial Commit">
+    <list default="true" id="cff16fa2-bbfd-44a9-8ac7-6221f308d7de" name="Changes" comment="InitialCommit">
+      <change afterPath="$PROJECT_DIR$/.idea/dbnavigator.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/senai/uc4/sa4/ConexaoMySQL.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/senai/uc4/sa3/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/senai/uc4/sa4/App.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/senai/uc4/sa3/Pagamento.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/senai/uc4/sa4/Pagamento.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/senai/uc4/sa3/Produto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/senai/uc4/sa4/Produto.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/senai/uc4/sa3/Venda.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/senai/uc4/sa4/Venda.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="PUSH_TAGS">
@@ -44,6 +50,7 @@
   "keyToString": {
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "last_opened_file_path": "/home/julio/IdeaProjects/UC4-SA4"
   }
 }]]></component>
@@ -98,7 +105,34 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="origin/original/manoel" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="RECENT_FILTERS">
+      <map>
+        <entry key="Branch">
+          <value>
+            <list>
+              <RecentGroup>
+                <option name="FILTER_VALUES">
+                  <option value="origin/original/manoel" />
+                </option>
+              </RecentGroup>
+            </list>
           </value>
         </entry>
       </map>
